@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trackmy bus</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color:rgb(249, 193, 193);
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .input-group {
+      margin-bottom: 15px;
+    }
+    input[type="text"], input[type="password"] {
+      width: 95%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: whitesmoke;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .map-placeholder {
+      height: 200px;
+      background-color: #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .button-group button {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>TrackMyBus</h1>
+      <p><b>Login page</b></p>
+    </div>
+
+    <div class="card">
+      <div class="input-group">
+        <label>Email</label>
+        <input type="text" placeholder="Enter your email" />
+      </div>
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password" />
+      </div>
+      <button>Login</button>
+    </div>
+
+    <div class="card">
+      <h2>Your Bus Route</h2>
+      <p>Route: 5 - Main Campus</p>
+      <p>Next Stop ETA: 5 mins</p>
+    </div>
+
+    <div class="card">
+      <h2>Live Bus Location</h2>
+      <div class="map-placeholder">
+        Map and Bus Location Placeholder
+      </div>
+    </div>
+
+    <div class="button-group">
+      <button>Alerts</button>
+      <button>Stops</button>
+      <button>Settings</button>
+    </div>
+  </div>
+</body>
+</html>
